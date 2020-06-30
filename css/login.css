@@ -12,4 +12,41 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: 100vh;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    padding:;
+    border: red 1px solid;
+
+}
+
+.intro{
+    text-align: center;
+    border: silver 2px solid;
+    background-color: rgba(192,192,192, 0.5);
+    padding: 1rem;
+}
+
+#inico{
+   border: red 1px solid;
+
+}
+
+.framemenu{
+    opacity: ;
+}
+
+.acceso-usuario{
+    
+}
+
+form label{
+    display: block;
+}
+
+.acceso-usuario h2{
+    font-size: 0.9rem;
+    
+}
+
