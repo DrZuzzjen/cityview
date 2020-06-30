@@ -6,35 +6,61 @@
   }
 
 
-  .header{
+@font-face{
+    font-family: logo;
+    src: url(../font/Pacifico-Regular.ttf);
+}  
+
+.header{
     background-image: url("../img/main-bg.jpg"); /* The image used */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;  
     align-items: center;
     padding:;
-    border: red 1px solid;
+    
+}
+/*LOGO !!! HERE*/
+.header h1{
+    font-family: logo;
+    font-size: 5rem;
+    color: #FE7F2D;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 1rem;
 
 }
 
+/*Frase de la Intro*/
+#fraseintro{
+    margin-top: ;
+    color: white;
+    text-shadow: 1px 1px 2px #233D4D, 0 0 25px #F9DC5C, 0 0 5px #F9DC5C;
+}
+
+/*FONDO DE LOGIN*/
 .intro{
     text-align: center;
     border: silver 2px solid;
-    background-color: rgba(192,192,192, 0.5);
+    background-color: rgba(254, 127, 45, 0.5);
     padding: 1rem;
+    border-radius: 10%;
+    box-shadow:2px 2px 4px #000000;
+    
 }
 
-#inico{
-   border: red 1px solid;
-
-}
+#inicio{
+    box-shadow: red 10px 10px;
+    background-color: red;
+   }
 
 .framemenu{
-    opacity: ;
+    padding: 1rem;
+    margin-bottom: 0;
+    
 }
 
 .acceso-usuario{
@@ -48,5 +74,23 @@ form label{
 .acceso-usuario h2{
     font-size: 0.9rem;
     
+    
 }
 
+.acceso-usuario > h2,label{
+    color:#F5F1ED ;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.contact-data input{
+    font-size: 1.5em;
+    text-align: center;
+    
+   
+    
+}
+.contact-data input::placeholder{
+    font-size: 0.5em;
+   
+    
+}
