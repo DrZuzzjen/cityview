@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+
+
+  .header{
+    background-image: url("../img/main-bg.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100vh;
+  }
