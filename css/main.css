@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1px 1px;
+    grid-template-areas:    "main main poster" 
+                            "main main poster2"
+                            "poster-row poster-row poster-row"
+                            "footer footer footer";
+  }
+  
+  .main { grid-area: main; }
+  
+  .poster { grid-area: poster; }
+  
+  .poster2 { grid-area: poster2; }
+  
+  .poster-row { grid-area: poster-row; }
+  
+  .footer { grid-area: footer; }

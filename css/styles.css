@@ -10,3 +10,7 @@
     font-family: logo;
     src: url(../font/Pacifico-Regular.ttf);
 }  
+
+:root {
+  --max-width: 900px;
+  --navbar-height: 50px;

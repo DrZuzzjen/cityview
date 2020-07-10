@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>CityView - La primera plataforma gratuita de Series y Películas</title>
 </head>
 <body>
     <header>
@@ -13,11 +15,15 @@
         <nav id="navbar" class="navbar">
             <div class="logo">CityView</div>
             <div class="burger-label"></div>
-            </form>
-                <form class="example" action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search2">
-                <button type="submit">Buscar<i class="fa fa-search"></i></button>
-            </form>
+        </div class="search">
+            <form class="search" action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" id="barra-b">
+            <button type="submit" class="searchb">Buscar</button>
+          
+            </form>  
+            
+        <div>
+                    
       
             <ul class="navbar-list">
               <li class="navbar-item">
@@ -34,30 +40,33 @@
               </li>
             </ul>
         </nav>
+        <!-- BARRA DE NAVEGACION -->
     </header>
    
-    <main>
+    <main class="grid-container">
         <section id="display-main" class="display-main">
-            <article>
-                <img src="./img/joker.jpg" alt="Joker" />
-                <video src="./vid/trailer-720p.mp4" alt="Video De Joker" controls ></video>
-                <h2>
-                  Titulo: Joker
-                </h2>
-                <p>
-                    Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso.
-                     El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen 
-                     por el sendero de la locura y, finalmente, cae en el mundo del crimen.
+          
+            <article class="main">
+            <video src="./vid/trailer-720p.mp4" alt="Video De Joker" controls ></video>
+            <h2>
+            Titulo: Joker
+            </h2>
+            <p>
+                Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso.
+                El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen 
+                por el sendero de la locura y, finalmente, cae en el mundo del crimen.
 
-              </p>
-              </article>        
+            </p>
+            </article>   
+         
         </section>
         
         
         <section id="catalogo-peliculas" class="catalogo peliculas">
-            <article>
+            <div class="grid-container">
+            <article class="poster">
                 <img src="./img/film1.jpg" alt="Poster de Película">
-                <h2>Titulo: Joker</h2>
+                <h2>Titulo: POSTER 1</h2>
                 <h3>Fecha de Publicación: 2019</h3>
                 <h3>Actores: <a href="https://es.wikipedia.org/wiki/Joaquin_Phoenix" target="blank">Joaquin Phoenix</a>, <a href="https://es.wikipedia.org/wiki/Robert_De_Niro" target="blank">Robert De Niro</a> </h3>
                 <h3>Clasificación: R - Mature</h3>
@@ -68,9 +77,9 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article class="poster-row">
                 <img src="./img/film2.jpg" alt="Poster de Película">
-                <h2>Titulo: Joker</h2>
+                <h2>Titulo: POSTER 2</h2>
                 <h3>Fecha de Publicación: 2019</h3>
                 <h3>Actores: <a href="https://es.wikipedia.org/wiki/Joaquin_Phoenix" target="blank">Joaquin Phoenix</a>, <a href="https://es.wikipedia.org/wiki/Robert_De_Niro" target="blank">Robert De Niro</a> </h3>
                 <h3>Clasificación: R - Mature</h3>
@@ -81,7 +90,7 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article class="poster-row"> 
                 <img src="./img/film3.jpg" alt="Poster de Película">
                 <h2>Titulo: Joker</h2>
                 <h3>Fecha de Publicación: 2019</h3>
@@ -94,7 +103,7 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article class="poster-row">
                 <img src="./img/film4.jpg" alt="Poster de Película">
                 <h2>Titulo: Joker</h2>
                 <h3>Fecha de Publicación: 2019</h3>
@@ -107,7 +116,7 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article class="poster-row">
                 <img src="./img/film5.jpg" alt="Poster de Película">
                 <h2>Titulo: Joker</h2>
                 <h3>Fecha de Publicación: 2019</h3>
@@ -120,7 +129,7 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article class="poster-row">
                 <img src="./img/film6.jpg" alt="Poster de Película">
                 <h2>Titulo: Joker</h2>
                 <h3>Fecha de Publicación: 2019</h3>
@@ -146,7 +155,7 @@
                      por el sendero de la locura y, finalmente, cae en el mundo del crimen.
                 </p>
             </article>
-            <article>
+            <article">
                 <img src="./img/film8.jpg" alt="Poster de Película">
                 <h2>Titulo: Joker</h2>
                 <h3>Fecha de Publicación: 2019</h3>
@@ -161,12 +170,13 @@
             </article>
             
 
-        </section>
+          </section>
+        </div>
     </main>
     
     
-    <footer>
-
+    <footer class="footer">
+        <p>soy un footer </p>
     </footer>
     
 </body>
