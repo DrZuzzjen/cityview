@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    width: 350px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    max-width: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    transform: translate(-22%, -22%);
+    -ms-transform: translate(-22%, -22%);
+    text-align: justify;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 16px;
+  
+  }
+
+.text button{
+    width: 90px;
+    font-size: 2em;
+    background-color: #FE7F2D;
+    
+}
+
+.play-movie a{
+   text-decoration: none;
+   color: blanchedalmond;
+}
+
+.container h2{
+    font-size: 2rem;
+}
+
+@font-face{
+    font-family: favorito;
+    src: url(../font/fonts/icomoon.ttf);
+  }
+
+  
+.favorito:before {
+    content: "\e9d9";
+    font-family: favorito;
+    font-size: 2rem;
+    border: white;
+    text-align: flex-end;
+    
+  }
+  .text .favorito{
+    color: gold;
+    text-decoration: none;
+
+  }
