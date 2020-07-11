@@ -4,10 +4,11 @@
     justify-content: space-evenly;
     background-color: black;
     align-items: center;
-    position: fixed;
+  
     width: 100vw;
+    z-index: 100;
     
-    
+   
 }
 
 .navbar-list {
