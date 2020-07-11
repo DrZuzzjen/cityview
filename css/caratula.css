@@ -1,14 +1,10 @@
 .container {
     position: relative;
-    min-width: 2vw;
-    overflow:  ;
+    margin: 0 auto;
     
   }
   
-  
- 
-  
-  .image {
+ .image {
     opacity: 1;
     display: block;
     width: 100%;
@@ -27,11 +23,13 @@
     transform: translate(-22%, -22%);
     -ms-transform: translate(-22%, -22%);
     text-align: match-parent;
+    margin-top: -1rem;
+    
     
   }
   
   .container:hover .image {
-    opacity: 0.3;
+    opacity: 0.1;
   }
   
   .container:hover .middle {
@@ -39,12 +37,12 @@
   }
   
   .text {
-    background-color: lightblue
+/* background-color: rgb(1, 1, 1, 0.2); */
     color: white;
     font-size: 1rem;
-    padding: 2px 2px;
-    height: 15px;
-    margin-top: -2rem;
+    padding: 1px 1px;
+    height: 1vw;
+    margin-top: -4vw;
     
   }
   
@@ -54,3 +52,42 @@
   p{
       font-size: 1vw;
   }
+
+  @font-face{
+    font-family: favorito;
+    src: url(../font/fonts/icomoon.ttf);
+  }
+
+  
+.favorito:before {
+    content: "\e9d9";
+    font-family: favorito;
+    font-size: 1rem;
+    border: white;
+    text-align: flex-end;
+    
+  }
+  .text .favorito{
+    color: gold;
+    text-decoration: none;
+    padding-left: 100vw%;
+
+  }
+
+ a{
+    color: #FE7F2D
+   }
+
+.titulo{
+    font-size: 1.5rem;
+}
+
+.sinopsis{
+    padding: 0px;
+    margin:1px;
+}
+
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
