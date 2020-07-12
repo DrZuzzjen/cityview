@@ -1,0 +1,50 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr  ;
+    gap: 1px 1px;
+    grid-template-areas: "playvideo playvideo infomovie"
+                         
+                         "related-content related-content related-content"
+                         "footer footer footer";
+    width: 100vw;
+/*     grid-auto-rows: minmax(100px , 9900px); */
+    justify-items: center;
+/*     height: 100vh; */
+    
+    
+
+}
+  
+  .playvideo { grid-area: playvideo; 
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    max-height:10%;
+
+}
+  
+  .related-content { grid-area: related-content; 
+    background-color: black;
+    align-items: center;
+}
+  
+  .footer { grid-area: footer;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    max-height: 15%;
+}
+  
+  .infomovie { grid-area: infomovie;
+    background-color: black;
+    padding: 2rem;
+    color: white;
+}
+
+#contenido-relacionado{
+    text-align: center;
+    color: white;
+}
