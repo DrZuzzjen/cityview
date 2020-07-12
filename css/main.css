@@ -10,16 +10,15 @@ body{
 
 .container-grid{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
     gap: 1px 1px;
     grid-template-areas: ". .";
     margin-top: 2.5vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 55px;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    padding: 1rem;
+        
     
     gap: 2rem;
   }
