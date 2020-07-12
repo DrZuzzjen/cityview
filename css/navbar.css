@@ -5,63 +5,29 @@
     text-shadow: 2px 2px 4px #000000;
     margin: 1rem;
     display: inline-block;
+    margin-left: 20%;
+    margin-top: 0%;
 }
 
 #barra-b ,.searchb {
-    visibility: hidden;
-}
-.navbar .burger-label {
-width: var(--navbar-height);
-height: var(--navbar-height);
-position: absolute;
-top: 0;
-left: 0;
-font-size: 40px;
+    display: none;
 }
 
 
-.burger-label:before {
-content: '';
-background-color: darkgray;
-width: 1em;
-height: 0.12em;
-position: absolute;
-left: 0.1em;
-top: 0.25em;
-box-shadow: 0 0.25em 0 0 darkgray, 0 0.5em 0 0 darkgray;
+.navbar-list{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0%;
+    margin-left: 
+
 }
 
-/* menú cerrado */
-.navbar-list {
-display: none;
-list-style: none;
-margin: 0;
+.navbar-item{
+    font-size: 0.7;
 }
 
-#burger-checkbox {
-display: none;
-}
-
-/* menú abierto */
-#burger-checkbox:checked ~ .navbar-list {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-background-color:red;
-opacity: 0.85;
-padding: 0;
-height: calc(100vh - var(--navbar-height));
-}
-
-
-.navbar-item > a {
-text-decoration: none;
-color: azure;
-line-height: 3rem;
-display: block;
-text-align: center;
-font-size: 2rem;
-}
 
 @media (min-width: 768px) {
     .navbar {

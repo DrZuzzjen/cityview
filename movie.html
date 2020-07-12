@@ -16,13 +16,17 @@
 <!-- BARRA DE NAVEGACION -->
 <nav id="navbar" class="navbar">
     <div class="logo">CityView</div>
+
     <input type="checkbox" id="burger-checkbox"/>
     <label for="burger-checkbox" class="burger-label"></label>
     <div class="burger-label"></div>
-    <div class="search"></div>
+
+    <div class="search">
     <form class="search" action="/action_page.php">
     <input type="text" placeholder="Buscar..." name="search" id="barra-b">
     <button type="submit" class="searchb">Buscar</button>
+    </div>
+
     </form>  
      <ul class="navbar-list">
         <li class="navbar-item">
@@ -34,7 +38,7 @@
         <li class="navbar-item">
         <a href="#series">Series</a>
         </li>
-        <li class="navbar-item">
+        <li class="navbar-item" id="cerrar">
         <a href="#cerrar-sesion">Cerrar Session</a>
         </li>
     </ul>
