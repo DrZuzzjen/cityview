@@ -17,10 +17,7 @@
 <nav id="navbar" class="navbar">
     <div class="logo">CityView</div>
 
-    <input type="checkbox" id="burger-checkbox"/>
-    <label for="burger-checkbox" class="burger-label"></label>
-    <div class="burger-label"></div>
-
+    
     <div class="search">
     <form class="search" action="/action_page.php">
     <input type="text" placeholder="Buscar..." name="search" id="barra-b">
@@ -48,7 +45,7 @@
 <main>
 <div class="grid-container">
     <div class="playvideo">
-        <video src="./vid/trailer-720p.mp4" controls autoplay ></video>
+        <video src="./vid/trailer-720p.mp4" controls autoplay class="video" ></video>
     </div>
     <div class="related-content">
         <h2 id="contenido-relacionado">Contenido Relacionado</h2>
@@ -57,10 +54,15 @@
      <img src="./img/film2.jpg" alt="poster" class="poster"> 
      <img src="./img/film3.jpg" alt="poster" class="poster"> 
      <img src="./img/film4.jpg" alt="poster" class="poster"> 
-     <img src="./img/film5.jpg" alt="poster" class="poster">    
+     <img src="./img/film5.jpg" alt="poster" class="poster"> 
+     <img src="./img/film7.jpg" alt="poster" class="poster">
+     <img src="./img/film8.jpg" alt="poster" class="poster"> 
+     <img src="./img/film9.jpg" alt="poster" class="poster"> 
+     <img src="./img/film10.jpg" alt="poster" class="poster"> 
+     <img src="./img/joker.jpg" alt="poster" class="poster">    
    </div>
   
-    <div class="infomovie">
+    <div class="infomovie" id="movie-info">
         <h2> <a href="movie.html" class="titulo">JOKER </a></h2>
         <h3>Fecha de Publicación: 2019</h3>
         <h3>Actores: <a href="https://es.wikipedia.org/wiki/Joaquin_Phoenix" target="blank">Joaquin Phoenix</a>, <a href="https://es.wikipedia.org/wiki/Robert_De_Niro" target="blank">Robert De Niro</a> </h3>

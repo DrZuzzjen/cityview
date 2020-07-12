@@ -1,3 +1,4 @@
+
 .container {
     position: relative;
     margin: 0 auto;
@@ -49,8 +50,118 @@
   h2, h3{
       font-size: 1vw;
   }
-  p{
+  .text p{
       font-size: 1vw;
+     
+  }
+
+  .sinopsis{
+      visibility: hidden;
+  }
+
+  @font-face{
+    font-family: favorito;
+    src: url(../font/fonts/icomoon.ttf);
+  }
+
+  
+.favorito:before {
+    content: "\e9d9";
+    font-family: favorito;
+    font-size: 1rem;
+    border: white;
+    text-align: flex-end;
+    
+  }
+  .text .favorito{
+    color: gold;
+    text-decoration: none;
+    padding-left: 100vw%;
+
+  }
+
+ .container a{
+    color: #FE7F2D
+   }
+
+.titulo{
+    font-size: 1.5rem;
+}
+
+.sinopsis{
+    padding: 0px;
+    margin:1px;
+}
+
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    
+  }
+  
+ .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    transform: translate(-22%, -22%);
+    -ms-transform: translate(-22%, -22%);
+    text-align: match-parent;
+    margin-top: -1rem;
+    
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.1;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+/* background-color: rgb(1, 1, 1, 0.2); */
+    color: white;
+    font-size: 1rem;
+    padding: 1px 1px;
+    height: 1vw;
+    margin-top: -4vw;
+    
+  }
+  
+  h2, h3{
+      font-size: 1vw;
+  }
+  p.sinopsis{
+      font-size: 0.7wh;
+     
+  }
+
+  .sinopsis{
+      visibility: visible;
   }
 
   @font-face{
@@ -90,4 +201,112 @@
 h3{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+}
+
+
+@media (min-width: 1400px) {
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        
+      }
+      
+     .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 22%;
+        left: 22%;
+        transform: translate(-22%, -22%);
+        -ms-transform: translate(-22%, -22%);
+        text-align: match-parent;
+        margin-top: -1rem;
+        
+        
+      }
+      
+      .container:hover .image {
+        opacity: 0.1;
+      }
+      
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+    /* background-color: rgb(1, 1, 1, 0.2); */
+        color: white;
+        font-size: 1rem;
+        padding: 1px 1px;
+        height: 1vw;
+        margin-top: -4vw;
+        
+      }
+      
+      h2, h3{
+          font-size: 0.9rem;
+      }
+      p.sinopsis{
+          font-size: 0.7vw;
+         
+      }
+    
+      .sinopsis{
+          visibility: visible;
+          font-size: .5rem;
+      }
+    
+      @font-face{
+        font-family: favorito;
+        src: url(../font/fonts/icomoon.ttf);
+      }
+    
+      
+    .favorito:before {
+        content: "\e9d9";
+        font-family: favorito;
+        font-size: 1rem;
+        border: white;
+        text-align: flex-end;
+        
+      }
+      .text .favorito{
+        color: gold;
+        text-decoration: none;
+        padding-top: 50%;
+        
+    
+      }
+    
+     a{
+        color: #FE7F2D;
+       }
+    
+    .titulo{
+        font-size: 1.5rem;
+    }
+    
+    .sinopsis{
+        padding: 0px;
+        margin:1px;
+    }
+    
+    h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
 }

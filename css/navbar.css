@@ -13,6 +13,9 @@
     display: none;
 }
 
+.navbar-item a{
+    color: white;
+}
 
 .navbar-list{
     display: flex;

@@ -1,89 +1,146 @@
-.header{
-    background-image: url("../img/main-bg.jpg"); /* The image used */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center;
-    padding:;
-    
-}
-/*LOGO !!! HERE*/
-.header h1{
-    font-family: logo;
-    font-size: 5rem;
-    color: #FE7F2D;
-    text-shadow: 2px 2px 4px #000000;
-    margin: 1rem;
 
+   #inicio{
+    box-shadow: yellow 800px 10px;
+    background-color: yellow;
 }
 
-/*Frase de la Intro*/
 #fraseintro{
     margin-top: ;
     color: white;
     text-shadow: 1px 1px 2px #233D4D, 0 0 25px #F9DC5C, 0 0 5px #F9DC5C;
 }
+ 
+.header h1{
+    font-family: logo;
+    font-size: 10vh;
+    color: #FE7F2D;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 1rem;
+    min-width: 15%;
+    min-height: 15%;
 
-/*FONDO DE LOGIN*/
+}
+
+.header{
+    background-image: url("../img/main-bg.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 95vh;
+        background-color:yellow;
+
+}
+
 .intro{
     text-align: center;
     border: orange 2px solid;
     background-color: rgba(254, 127, 45, 0.5);
     padding: 1rem;
     border-radius: 10%;
-   /*  box-shadow:2px 2px 4px #000000; */
-   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
+/*  box-shadow:2px 2px 4px #000000; */
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     
 }
 
 #inicio{
-    box-shadow: red 10px 10px;
-    background-color: red;
-   }
+    box-shadow: orange 10px 10px;
+    background-color: blue;
+}
 
-.framemenu{
-    padding: 1rem;
-    margin-bottom: 0;
+
+
+
+@media (min-width: 768px) {
+
+    .header{
+        background-image: url("../img/main-bg.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding:;
+        
+    }
+    /*LOGO !!! HERE*/
+    .header h1{
+        font-family: logo;
+        font-size: 5rem;
+        color: #FE7F2D;
+        text-shadow: 2px 2px 4px #000000;
+        margin: 1rem;
+
+    }
+
+    /*Frase de la Intro*/
+    #fraseintro{
+        margin-top: ;
+        color: white;
+        text-shadow: 1px 1px 2px #233D4D, 0 0 25px #F9DC5C, 0 0 5px #F9DC5C;
+    }
+
+    /*FONDO DE LOGIN*/
+    .intro{
+        text-align: center;
+        border: orange 2px solid;
+        background-color: rgba(254, 127, 45, 0.5);
+        padding: 1rem;
+        border-radius: 10%;
+    /*  box-shadow:2px 2px 4px #000000; */
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+        
+    }
+
+    #inicio{
+        box-shadow: red 10px 10px;
+        background-color: red;
+    }
+
+    .framemenu{
+        padding: 1rem;
+        margin-bottom: 0;
+        
+    }
+
+    .acceso-usuario{
+        
+    }
+
+    form label{
+        display: block;
+    }
+
+    .acceso-usuario h2{
+        font-size: 0.9rem;
+    
     
 }
 
-.acceso-usuario{
-    
-}
+    .acceso-usuario > h2,label{
+        color:#F5F1ED ;
+        text-shadow: 2px 2px 4px #000000;
+    }
 
-form label{
-    display: block;
-}
+    .contact-data input{
+        font-size: 1.5em;
+        text-align: center;
+        
+    
+        
+    }
+    .contact-data input::placeholder{
+        font-size: 0.5em;
+    
+        
+    }
 
-.acceso-usuario h2{
-    font-size: 0.9rem;
-    
-    
-}
+    #resetpassword{
+        font-size: 0.8em;
+    }
 
-.acceso-usuario > h2,label{
-    color:#F5F1ED ;
-    text-shadow: 2px 2px 4px #000000;
-}
+ }
 
-.contact-data input{
-    font-size: 1.5em;
-    text-align: center;
-    
-   
-    
-}
-.contact-data input::placeholder{
-    font-size: 0.5em;
-   
-    
-}
-
-#resetpassword{
-    font-size: 0.8em;
-}
